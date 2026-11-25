@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Warung Rush — Game Masak Warung Indonesia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<style>
+  html, body { margin: 0; padding: 0; background: #2b1d16; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: "Trebuchet MS", Verdana, sans-serif; }
+  #wrap { width: min(1280px, 100vw); }
+  canvas { display: block; width: 100%; height: auto; background: #f7e8c9; cursor: pointer; }
+  #hint { color: #d8c3a5; text-align: center; font-size: 13px; padding: 6px 0; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="hint">WASD / panah: gerak &nbsp;•&nbsp; E / Spasi: pakai stasiun &nbsp;•&nbsp; Klik: jalan &amp; pakai &nbsp;•&nbsp; P: jeda &nbsp;•&nbsp; R: ulang &nbsp;•&nbsp; M: suara</div>
+</div>
+<script src="src/recipes.js"></script>
+<script src="src/state.js"></script>
+<script src="src/input.js"></script>
+<script src="src/audio.js"></script>
+<script src="src/kitchen.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
